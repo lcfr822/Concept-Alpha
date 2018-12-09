@@ -1,4 +1,4 @@
-﻿namespace Mapbox.Examples
+namespace Mapbox.Examples
 {
 	using Mapbox.Unity.Location;
 	using Mapbox.Unity.Map;
@@ -6,12 +6,14 @@
 
 	public class ImmediatePositionWithLocationProvider : MonoBehaviour
 	{
-		//[SerializeField]
-		//private UnifiedMap _map;
+        //[SerializeField]
+        //private UnifiedMap _map;
 
-		bool _isInitialized;
+        bool _isInitialized;
 
-		ILocationProvider _locationProvider;
+        Vector3 oldLocalPosition;
+
+        ILocationProvider _locationProvider;
 		ILocationProvider LocationProvider
 		{
 			get
@@ -32,14 +34,14 @@
 			LocationProviderFactory.Instance.mapManager.OnInitialized += () => _isInitialized = true;
 		}
 
-		void LateUpdate()
+        void LateUpdate()
 		{
-			if (_isInitialized)
-			{
-				var map = LocationProviderFactory.Instance.mapManager;
-				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
-
-			}
-		}
+            if (_isInitialized)
+            {
+                var map = LocationProviderFactory.Instance.mapManager;
+                transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
+            }
+            oldLocalPosition = transform.localPosition;
+        }
 	}
 }

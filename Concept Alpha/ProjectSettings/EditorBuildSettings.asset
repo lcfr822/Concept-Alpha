@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapScene.unity
     guid: 1054fbd4725c3804b923b89ee106ee42
+  - enabled: 1
+    path: Assets/Scenes/EncounterScene.unity
+    guid: 285974d9eee15f443828b5533ea82cc5
   m_configObjects: {}

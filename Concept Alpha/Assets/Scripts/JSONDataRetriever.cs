@@ -1,34 +1,54 @@
 ﻿using System;
 using System.Text;
 using System.Net;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class JSONDataRetriever {
-    private string[] apiUris =
-    {
-        "https://api.discover.com/cityguides/v2/categories",
-        "https://api.discover.com/cityguides/v2/cities",
-        /*"https://api.discover.com/cityguides/v2/merchants?"*/
-    };
+    List<ATMLocation> atmLocations = new List<ATMLocation>();
 
-    public List<string> InitAPIs()
+    public void ReadData()
     {
-        List<string> values = new List<string>();
-        ClientRequest(apiUris[0]);
-        return values;
+        ParseAtmData();
     }
 
-    private string ClientRequest(string uri)
+    private void ParseAtmData()
     {
-        WebClient newClient = new WebClient();
-        newClient.Headers.Clear();
-        newClient.Headers.Add(HttpRequestHeader.Accept, "application/json");
-        newClient.Headers.Add("x-dfs-api-plan", "CITYGUIDES_SANDBOX");
-        newClient.Headers.Add(HttpRequestHeader.Authorization, "Bearer f86129fc-b444-4b2c-ad74-6d60868a4cf7");
-        string jsonResult = Encoding.UTF8.GetString(newClient.DownloadData(uri));
-        Debug.Log(jsonResult);
-        return jsonResult;
+        var file = File.ReadAllText("Assets/Resources/JSON/ATMLocatoinsParsedLondon.txt");
+        string[] atmData = file.Split('\n');
+        foreach(string datum in atmData)
+        {
+            string filer = datum.Trim(new char[] { '[', ']', });
+            string[] parts = filer.Split(',');
+            ATMLocation newAtm = new ATMLocation(parts[2], float.Parse(parts[1]), float.Parse(parts[0]));
+            atmLocations.Add(newAtm);
+        }
+    }
+
+    private void ParseStoreData()
+    {
+        var file = File.ReadAllText("Asset/Resources/JSON/meow.txt");
+        //string[] storeData = file.Split('');
+    }
+    
+    private void ParseTipData()
+    {
+
     }
 }
+
+public struct ATMLocation {
+    string name;
+    float lat, lon;
+
+    public ATMLocation(string newName, float newLat, float newLon)
+    {
+        name = newName;
+        lat = newLat;
+        lon = newLon;
+    }
+}
+

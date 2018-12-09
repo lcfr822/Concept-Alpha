@@ -1,4 +1,4 @@
-﻿namespace Mapbox.Examples
+namespace Mapbox.Examples
 {
 	using Mapbox.Unity.Map;
 	using Mapbox.Unity.Utilities;
@@ -142,6 +142,7 @@
 
 		void PanMapUsingKeyBoard(float xMove, float zMove)
 		{
+            Vector2 oldLongLat = Vector2.zero;
 			if (Math.Abs(xMove) > 0.0f || Math.Abs(zMove) > 0.0f)
 			{
 				// Get the number of degrees in a tile at the current zoom level.
@@ -149,11 +150,11 @@
 				// to get degrees represented by each pixel.
 				// Keyboard offset is in pixels, therefore multiply the factor with the offset to move the center.
 				float factor = _panSpeed * (Conversions.GetTileScaleInDegrees((float)_mapManager.CenterLatitudeLongitude.x, _mapManager.AbsoluteZoom));
-				//MapLocationOptions locationOptions = new MapLocationOptions
-				//{
+                //MapLocationOptions locationOptions = new MapLocationOptions
+                //{
 				var latitudeLongitude = new Vector2d(_mapManager.CenterLatitudeLongitude.x + zMove * factor * 2.0f, _mapManager.CenterLatitudeLongitude.y + xMove * factor * 4.0f);
-				//};
-				_mapManager.UpdateMap(latitudeLongitude, _mapManager.Zoom);
+                //};
+                _mapManager.UpdateMap(latitudeLongitude, _mapManager.Zoom);
 			}
 		}
 
