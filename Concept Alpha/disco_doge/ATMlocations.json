@@ -1,0 +1,127 @@
+[
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "5100 KENNEDY BLVD W\n\nWEST NEW YORK, NJ 07093\nUSA", 
+            "homeAddress": "false", 
+            "locality": "WEST NEW YORK", 
+            "postalCode": "07093", 
+            "preferred": "false", 
+            "region": "NJ", 
+            "streetAddress": "5100 KENNEDY BLVD W"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3294833", 
+        "latitude": 40.784117, 
+        "longitude": -74.022766, 
+        "name": "PNC BANK NA", 
+        "preferred": false
+    }, 
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "400 PARK PL\n\nSECAUCUS, NJ 07094\nUSA", 
+            "homeAddress": "false", 
+            "locality": "SECAUCUS", 
+            "postalCode": "07094", 
+            "preferred": "false", 
+            "region": "NJ", 
+            "streetAddress": "400 PARK PL"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3289136", 
+        "latitude": 40.792866, 
+        "longitude": -74.042132, 
+        "name": "WAL-MART", 
+        "preferred": false
+    }, 
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "636 11TH AV\n\nNEW YORK, NY 10036\nUSA", 
+            "homeAddress": "false", 
+            "locality": "NEW YORK", 
+            "postalCode": "10036", 
+            "preferred": "false", 
+            "region": "NY", 
+            "streetAddress": "636 11TH AV"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3303615", 
+        "latitude": 40.763663, 
+        "longitude": -73.996157, 
+        "name": "QUORUM FCU", 
+        "preferred": false
+    }, 
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "636 11TH AVE\n\nNEW YORK, NY 10036\nUSA", 
+            "homeAddress": "false", 
+            "locality": "NEW YORK", 
+            "postalCode": "10036", 
+            "preferred": "false", 
+            "region": "NY", 
+            "streetAddress": "636 11TH AVE"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3304172", 
+        "latitude": 40.763663, 
+        "longitude": -73.996157, 
+        "name": "QUORUM", 
+        "preferred": false
+    }, 
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "522 WEST 38TH STREET\n\nNEW YORK, NY 10018\nUSA", 
+            "homeAddress": "false", 
+            "locality": "NEW YORK", 
+            "postalCode": "10018", 
+            "preferred": "false", 
+            "region": "NY", 
+            "streetAddress": "522 WEST 38TH STREET"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3293334", 
+        "latitude": 40.757448, 
+        "longitude": -73.99853, 
+        "name": "BEST WESTERN CONVENTION CENTER", 
+        "preferred": false
+    }
+]
