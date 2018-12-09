@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        Time.timeScale = 1;
         Globals.playerBalls = 5;
         Globals.playerTreats = 2;
         Globals.playerPills["Red"] = 1;
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour {
             if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.GetTouch(0).position), out touchHit))
             {
                 Debug.Log(touchHit.collider.name);
+                if (touchHit.collider.name.Contains("ATMMarker")) { touchHit.collider.GetComponent<ATMController>().ApplyPowerUp(BallPowerUpCallback); }
             }
         }
 
@@ -48,5 +50,16 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("Stopping");
             GetComponent<Animator>().Play("Warrior_Idle");
         }*/
+    }
+
+    public void BallPowerUpCallback()
+    {
+        ballTxt.text = Globals.playerBalls.ToString();
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        ballTxt.text = Globals.playerBalls.ToString();
+        treatTxt.text = Globals.playerTreats.ToString();
     }
 }

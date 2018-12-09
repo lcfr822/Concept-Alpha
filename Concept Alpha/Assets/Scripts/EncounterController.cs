@@ -21,6 +21,7 @@ public class EncounterController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Time.timeScale = 1;
         ballText.text = Globals.playerBalls.ToString();
         treatText.text = Globals.playerTreats.ToString();
         opponent.sprite = opponentSprites[Random.Range(0, 1)];
@@ -45,6 +46,7 @@ public class EncounterController : MonoBehaviour {
 
         if (Input.touchCount > 0 && isTurn)
         {
+            Debug.Log("Touching");
             isTurn = false;
             pointEventData = new PointerEventData(eventSystem) { position = Input.GetTouch(0).position };
             List<RaycastResult> results = new List<RaycastResult>();
@@ -61,6 +63,7 @@ public class EncounterController : MonoBehaviour {
 
     private void ThrowTreat()
     {
+        Debug.Log("throwing treat");
         FindObjectOfType<EncounterOpponent>().Pacify(Random.Range(17, 31), "treat");
         Globals.playerTreats--;
         treatText.text = Globals.playerTreats.ToString();
@@ -69,6 +72,7 @@ public class EncounterController : MonoBehaviour {
 
     private void ThrowBall()
     {
+        Debug.Log("throwing ball");
         FindObjectOfType<EncounterOpponent>().Pacify(Random.Range(14, 21), "ball");
         Globals.playerBalls--;
         ballText.text = Globals.playerBalls.ToString();
@@ -84,6 +88,13 @@ public class EncounterController : MonoBehaviour {
     private IEnumerator TriggerWait()
     {
         yield return new WaitForSeconds(3);
+        Debug.Log("Done waiting");
         isTurn = true;
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        ballText.text = Globals.playerBalls.ToString();
+        treatText.text = Globals.playerTreats.ToString();
     }
 }

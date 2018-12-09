@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,9 +17,11 @@ public class ATMController : MonoBehaviour {
 		
 	}
 
-    public void ApplyPowerUp()
+    public void ApplyPowerUp(Action callback)
     {
+        if (isUsed) { return; }
         Globals.playerBalls++;
+        callback();
         StartCoroutine(DisableATM());
     }
 
