@@ -1,0 +1,5 @@
+[-122.33207, 47.606209, u'PACIFIC INTERNATIONAL BANK']
+[-122.33207, 47.606209, u'U.S. Bank University of Washington']
+[-122.33207, 47.606209, u'Washington State Employees CU']
+[-122.329886, 47.604452, u'East West Bank']
+[-122.335175, 47.604889, u'VERITY CREDIT UNION']

@@ -1,0 +1,4 @@
+{
+    "error": "1003", 
+    "error_description": "Not authorized to access the resource!"
+}

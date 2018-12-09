@@ -1,0 +1,8 @@
+{
+    "error": "Method Not Allowed", 
+    "exception": "org.springframework.web.HttpRequestMethodNotSupportedException", 
+    "message": "Request method 'GET' not supported", 
+    "path": "/dci/atm/v1/healthcheck", 
+    "status": 405, 
+    "timestamp": 1544336023376
+}

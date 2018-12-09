@@ -1,0 +1,127 @@
+[
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "1155 N 130TH ST STE100\n\nSEATTLE, WA 98133\nUSA", 
+            "homeAddress": "false", 
+            "locality": "SEATTLE", 
+            "postalCode": "98133", 
+            "preferred": "false", 
+            "region": "WA", 
+            "streetAddress": "1155 N 130TH ST STE100"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3290788", 
+        "latitude": 47.606209, 
+        "longitude": -122.33207, 
+        "name": "PACIFIC INTERNATIONAL BANK", 
+        "preferred": false
+    }, 
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "Husky Union Blvd, Rm 105\n\nSeattle, WA 98185\nUSA", 
+            "homeAddress": "false", 
+            "locality": "Seattle", 
+            "postalCode": "98185", 
+            "preferred": "false", 
+            "region": "WA", 
+            "streetAddress": "Husky Union Blvd, Rm 105"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3301538", 
+        "latitude": 47.606209, 
+        "longitude": -122.33207, 
+        "name": "U.S. Bank University of Washington", 
+        "preferred": false
+    }, 
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "Suzzallo Library Espresso Cafe\n\nSeattle, WA 98195\nUSA", 
+            "homeAddress": "false", 
+            "locality": "Seattle", 
+            "postalCode": "98195", 
+            "preferred": "false", 
+            "region": "WA", 
+            "streetAddress": "Suzzallo Library Espresso Cafe"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3285283", 
+        "latitude": 47.606209, 
+        "longitude": -122.33207, 
+        "name": "Washington State Employees CU", 
+        "preferred": false
+    }, 
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "705 5TH AVENUE SOUTH #100\n\nSEATTLE, WA 98104\nUSA", 
+            "homeAddress": "false", 
+            "locality": "SEATTLE", 
+            "postalCode": "98104", 
+            "preferred": "false", 
+            "region": "WA", 
+            "streetAddress": "705 5TH AVENUE SOUTH #100"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3302328", 
+        "latitude": 47.604452, 
+        "longitude": -122.329886, 
+        "name": "East West Bank", 
+        "preferred": false
+    }, 
+    {
+        "address": {
+            "country": "USA", 
+            "formatted": "915 2ND AVE\n\nSEATTLE, WA 98174\nUSA", 
+            "homeAddress": "false", 
+            "locality": "SEATTLE", 
+            "postalCode": "98174", 
+            "preferred": "false", 
+            "region": "WA", 
+            "streetAddress": "915 2ND AVE"
+        }, 
+        "features": {
+            "BRAILLE": "UNKNOWN", 
+            "DRIVE_UP": "UNKNOWN", 
+            "RESTRICTED": "UNKNOWN", 
+            "SURCHARGE_FREE": "UNKNOWN", 
+            "WALK_UP": "NO"
+        }, 
+        "homeAddress": false, 
+        "id": "3284991", 
+        "latitude": 47.604889, 
+        "longitude": -122.335175, 
+        "name": "VERITY CREDIT UNION", 
+        "preferred": false
+    }
+]
